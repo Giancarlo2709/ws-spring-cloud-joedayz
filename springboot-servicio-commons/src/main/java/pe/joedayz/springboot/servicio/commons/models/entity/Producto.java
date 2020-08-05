@@ -1,4 +1,4 @@
-package pe.joedayz.springboot.servicio.productos.models.entity;
+package pe.joedayz.springboot.servicio.commons.models.entity;
 
 import java.util.Date;
 
@@ -16,6 +16,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 @Data
 @AllArgsConstructor
@@ -37,6 +38,6 @@ public class Producto {
 	private Date createdAt;
 	
 	@Transient
-	private Integer port;	
+	private Integer port;
 
 }

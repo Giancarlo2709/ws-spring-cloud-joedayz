@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import pe.joedayz.springboot.servicio.productos.models.dao.ProductoRepository;
-import pe.joedayz.springboot.servicio.productos.models.entity.Producto;
+import pe.joedayz.springboot.servicio.commons.models.entity.Producto;
 
 @Service
 public class ProductoServiceImpl implements ProductoService {
@@ -23,6 +23,16 @@ public class ProductoServiceImpl implements ProductoService {
 	@Override
 	public Optional<Producto> findById(Long id) {
 		return this.productoRepository.findById(id);
+	}
+
+	@Override
+	public Producto save(Producto producto) {
+		return this.productoRepository.save(producto);
+	}
+
+	@Override
+	public void deleteById(Long id) {
+		this.productoRepository.deleteById(id);		
 	}
 
 }

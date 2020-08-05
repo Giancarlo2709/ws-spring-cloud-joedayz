@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import pe.joedayz.springboot.servicio.commons.models.entity.Producto;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

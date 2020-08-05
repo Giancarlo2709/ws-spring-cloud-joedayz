@@ -1,7 +1,7 @@
 package pe.joedayz.springboot.servicio.productos.models.dao;
 
 import org.springframework.data.repository.CrudRepository;
-import pe.joedayz.springboot.servicio.productos.models.entity.Producto;
+import pe.joedayz.springboot.servicio.commons.models.entity.Producto;
 
 public interface ProductoRepository extends CrudRepository<Producto, Long> {
 
